@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.canvasocr.helper.LockableViewPager
+            android:id="@+id/viewPagerId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </com.example.canvasocr.helper.LockableViewPager>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/erase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Erase"/>
+
+    <Button
+        android:id="@+id/getocr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/erase"
+        android:text="OCR"/>
+
+</RelativeLayout>
